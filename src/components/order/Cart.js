@@ -55,9 +55,9 @@ const Cart = () => {
     return (
         <Layout title="Your Cart" description="Hurry up! Place your order!" className="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Order</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                <ol className="breadcrumb">
+                    <li className="breadcrumb-item"><a href="#">Order</a></li>
+                    <li className="breadcrumb-item active" aria-current="page">Cart</li>
                 </ol>
             </nav>
             <div className="container my-5">
@@ -69,7 +69,7 @@ const Cart = () => {
                             <th scope="col">Product Name</th>
                             <th scope="col">Quantity</th>
                             <th scope="col" align="right">Price</th>
-                            <th scop="col">Remove</th>
+                            <th scope="col">Remove</th>
                         </tr>
                     </thead>
                     <tbody>

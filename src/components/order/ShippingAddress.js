@@ -82,10 +82,10 @@ const ShippingAddress = ({ history }) => {
         <Layout title="Checkout" description="Complete your order!" className="container">
             {redirect ? history.push('/checkout') : ""}
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><Link href="#">Order</Link></li>
-                    <li class="breadcrumb-item"><Link href="#">Cart</Link></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shipping Address</li>
+                <ol className="breadcrumb">
+                    <li className="breadcrumb-item"><Link href="#">Order</Link></li>
+                    <li className="breadcrumb-item"><Link href="#">Cart</Link></li>
+                    <li className="breadcrumb-item active" aria-current="page">Shipping Address</li>
                 </ol>
             </nav>
             <div className="container">
