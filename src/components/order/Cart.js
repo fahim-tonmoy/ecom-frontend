@@ -56,7 +56,7 @@ const Cart = () => {
         <Layout title="Your Cart" description="Hurry up! Place your order!" className="container">
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#">Order</a></li>
+                    <li className="breadcrumb-item"><a to="#">Order</a></li>
                     <li className="breadcrumb-item active" aria-current="page">Cart</li>
                 </ol>
             </nav>

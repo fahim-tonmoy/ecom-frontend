@@ -33,7 +33,7 @@ const Checkout = () => {
     useEffect(() => {
         getProfile(userInfo().token)
             .then(response => setValues(response.data))
-            .catch(err => { })
+            .catch(err => console.log(err))
         loadCart();
     }, []);
 
@@ -59,9 +59,9 @@ const Checkout = () => {
         <Layout title="Checkout" description="Complete your order!" className="container">
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link href="#">Order</Link></li>
-                    <li className="breadcrumb-item"><Link href="#">Cart</Link></li>
-                    <li className="breadcrumb-item"><Link href="#">Shipping Address</Link></li>
+                    <li className="breadcrumb-item"><Link to="#">Order</Link></li>
+                    <li className="breadcrumb-item"><Link to="#">Cart</Link></li>
+                    <li className="breadcrumb-item"><Link to="#">Shipping Address</Link></li>
                     <li className="breadcrumb-item active" aria-current="page">Checkout</li>
                 </ol>
             </nav>

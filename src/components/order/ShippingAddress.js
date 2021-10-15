@@ -80,11 +80,12 @@ const ShippingAddress = ({ history }) => {
 
     return (<>
         <Layout title="Checkout" description="Complete your order!" className="container">
-            {redirect ? history.push('/checkout') : ""}
+            {/* {redirect ? history.push('/checkout') : ""} */}
+            {redirect && setTimeout(() => { history.push('/checkout');}, 0)}
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link href="#">Order</Link></li>
-                    <li className="breadcrumb-item"><Link href="#">Cart</Link></li>
+                    <li className="breadcrumb-item"><Link to="#">Order</Link></li>
+                    <li className="breadcrumb-item"><Link to="/cart">Cart</Link></li>
                     <li className="breadcrumb-item active" aria-current="page">Shipping Address</li>
                 </ol>
             </nav>
